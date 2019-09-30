@@ -112,6 +112,7 @@ void traversePreOrder(Node<T>* newroot) {
             }
         }
 
+        // Este código se puede reducir bastante, tienes varias partes repetidas
         bool remove(T data) {
             if(!root){
                 return false;
@@ -259,6 +260,7 @@ void traversePreOrder(Node<T>* newroot) {
         }
 
         ~BSTree() {
+            // Falta destructor
             // TODO
         }
 };

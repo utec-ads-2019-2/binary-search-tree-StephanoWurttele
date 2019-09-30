@@ -32,7 +32,7 @@ void Tester::testBSFTree(Mocker mocker, vector<T> elements) {
     test->traverseInOrder();
     cout<<endl;
     cout<<"Size is "<<test->size()<<" and height is "<<test->height()<<endl;
-    //sortAndPrune(elements);
+    sortAndPrune(elements);
 
     ASSERT(elements.size() == test->size(), "There is a problem with the insert or size");
     unsigned int toRemove = mocker.generateRandomInt(1, elements.size());
@@ -59,7 +59,7 @@ void Tester::testBSFTree(Mocker mocker, vector<T> elements) {
 
 template <typename T>
 void Tester::sortAndPrune(vector<T>& array) {
-    //sort(array.begin(), array.end());
+    sort(array.begin(), array.end());
     //auto last = unique(array.begin(), array.end());
     //array.erase(last, array.end()); 
 }
